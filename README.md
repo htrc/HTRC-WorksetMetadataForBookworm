@@ -16,7 +16,7 @@ mvn clean package
 java  -jar HTRCWorksetMetadata.jar [-r regExtURL] [-o outputFilePath]
 ```
 
-### Options
+#### Options
 ```
 -r  The registry extension endpoint to contact to obtain information about public HTRC worksets.
 

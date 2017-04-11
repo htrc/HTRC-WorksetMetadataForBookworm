@@ -15,18 +15,18 @@ mvn clean package
 ```
 java  -jar HTRCWorksetMetadata.jar [-r regExtURL] [-o outputFilePath]
 ```
-regExtUrl and outputFilePath are both optional arguments.
 
-regExtUrl: the registry extension endpoint to contact to obtain information
-about public worksets.
+### Options
+```
+-r  The registry extension endpoint to contact to obtain information about public HTRC worksets.
 
-outputFilePath: the full path of the output file; the default value is
-"HTRCPublicWorksets.json".
+-o  The full path of the output file. The default value is "HTRCPublicWorksets.json".
+```
 
 ## Output
 
 The tool creates an output file, HTRCPublicWorksets.json by default, which
-contains a JSON object per line. Each JSON object lists an HTRC volume id and
+contains a JSON object per line. Each JSON object lists an HTRC volume identifier and
 the set of HTRC public worksets which contain the associated volume. An
 example is included below.
 
